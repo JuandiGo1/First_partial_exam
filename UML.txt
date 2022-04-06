@@ -1,0 +1,35 @@
+@startuml
+left to right direction
+
+class Figura {
++ base: float
++ altura: float
++ obtenerArea(): float
+}
+
+
+class cuadrado{
++ obtenerArea(base)
+
+}
+
+class rectangulo{
++ obtenerArea(base, altura)
+}
+
+class triangulo{
++ obtenerArea(base, altura)
+}
+
+class rombo{
++ diagonalMayor: float
++ diagonalMenor: float
++ obtenerArea(diagonalMayor, diagonalMenor)
+}
+
+Figura <|-- cuadrado
+Figura <|-- rectangulo
+Figura <|-- triangulo
+Figura <|-- rombo
+
+@enduml
